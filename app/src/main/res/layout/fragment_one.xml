@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".FragmentOne">
+
+    <!-- Email Label -->
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_label"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/red"/>
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/emailLabel"
+        android:layout_alignBaseline="@id/emailLabel"
+        android:layout_marginStart="16dp"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+
+        android:padding="8dp"
+        android:textSize="16sp"/>
+
+    <!-- Password Label -->
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_label"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/red"/>
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/passwordLabel"
+        android:layout_alignBaseline="@id/passwordLabel"
+        android:layout_marginStart="16dp"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+
+        android:padding="8dp"
+        android:textSize="16sp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/submit"
+        android:textColor="@android:color/white"
+        />
+
+    <!-- Output 1 -->
+    <TextView
+        android:id="@+id/data_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+
+        />
+
+    <!-- Output 2 -->
+    <TextView
+        android:id="@+id/data_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/green"
+
+        />
+</RelativeLayout>
